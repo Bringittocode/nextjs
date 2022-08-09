@@ -9,7 +9,9 @@
 /coverage
 
 # next.js
-/.next/
+# /.next/
+/.next/cache
+/.next/server/pages/staticrevalidate.html
 /out/
 
 # production
