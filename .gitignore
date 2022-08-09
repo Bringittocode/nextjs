@@ -9,7 +9,12 @@
 /coverage
 
 # next.js
+<<<<<<< HEAD
 /.next/
+=======
+# /.next/
+/.next/cache
+>>>>>>> 26fc0b62054ce06320766114cb809face96ee443
 /out/
 
 # production
