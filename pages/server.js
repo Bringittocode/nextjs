@@ -16,11 +16,9 @@ export default function Server({numbers}) {
                     <div className="grid grid-cols-3 gap-4">
                         {[...Array(numbers)].map((_number, key)=>{
                             return(
-                                <>
-                                    <div key={key} className="rounded-md p-5 flex items-center justify-center bg-slate-500 text-white font-extrabold text-3xl">
-                                        {key}
-                                    </div>
-                                </>
+                                <div key={key} className="rounded-md p-5 flex items-center justify-center bg-slate-500 text-white font-extrabold text-3xl">
+                                    {key}
+                                </div>
                             )
                         })}
                     </div>

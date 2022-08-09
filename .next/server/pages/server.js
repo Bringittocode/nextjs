@@ -50,12 +50,10 @@ function Server({ numbers  }) {
                             children: [
                                 ...Array(numbers)
                             ].map((_number, key)=>{
-                                return /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
-                                    children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                                        className: "rounded-md p-5 flex items-center justify-center bg-slate-500 text-white font-extrabold text-3xl",
-                                        children: key
-                                    }, key)
-                                });
+                                return /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                                    className: "rounded-md p-5 flex items-center justify-center bg-slate-500 text-white font-extrabold text-3xl",
+                                    children: key
+                                }, key);
                             })
                         })
                     }),
