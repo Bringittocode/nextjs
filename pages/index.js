@@ -30,12 +30,12 @@ export default function Home() {
                 <div className="w-full flex items-center mt-5 justify-center">
                     <Link href="/staticrevalidate">
                         <button className="mx-3 px-3 py-5 font-extrabold rounded-md bg-neutral-500">
-                            Go to static with revalidate page
+                           Edited Go to static with revalidate page
                         </button>
                     </Link>
                     <Link href="/server">
                         <button className="mx-3 px-3 py-5 font-extrabold rounded-md bg-neutral-500">
-                            Go to server page
+                           Testing auto deploy Go to server page
                         </button>
                     </Link>
                 </div>
