@@ -2,7 +2,10 @@ import Head from 'next/head';
 
 import Link from "next/link";
 
+import randomBytes from 'randombytes';
 
+
+const bytes = randomBytes(16);//get 16 random bytes
 export default function Home() {
     return (
         <>
@@ -30,7 +33,7 @@ export default function Home() {
                 <div className="w-full flex items-center mt-5 justify-center">
                     <Link href="/staticrevalidate">
                         <button className="mx-3 px-3 py-5 font-extrabold rounded-md bg-neutral-500">
-                           Edited Go to static with revalidate page
+                           {bytes} Edited Go to static with revalidate page
                         </button>
                     </Link>
                     <Link href="/server">
