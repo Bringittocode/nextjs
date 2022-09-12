@@ -1,6 +1,10 @@
 const { createServer } = require('http')
 const { parse } = require('url')
 const next = require('next')
+const cnad = require("@bitc/cnad");
+
+
+cnad.config("/home/bringitt/nodevenv/youtube.bringittocode.org.files/14");
 
 const dev = false; //process.env.NODE_ENV !== 'production'
 const hostname = 'localhost'
@@ -10,6 +14,9 @@ const app = next({ dev, hostname, port })
 const handle = app.getRequestHandler()
 
 app.prepare().then(() => {
+	
+	cnad.start();
+
     createServer(async (req, res) => {
         try {
             // Be sure to pass `true` as the second argument to `url.parse`.
